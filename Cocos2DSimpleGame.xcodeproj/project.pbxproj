@@ -139,6 +139,15 @@
 		35DC324116530CA300862E62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC324016530CA300862E62 /* AppDelegate.m */; };
 		35DC324416530CA400862E62 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC324316530CA400862E62 /* HelloWorldLayer.m */; };
 		35DC324716530CA400862E62 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC324616530CA400862E62 /* IntroLayer.m */; };
+		35DC325E1653184500862E62 /* monster-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 35DC32551653184500862E62 /* monster-hd.png */; };
+		35DC325F1653184500862E62 /* monster.png in Resources */ = {isa = PBXBuildFile; fileRef = 35DC32561653184500862E62 /* monster.png */; };
+		35DC32601653184500862E62 /* player-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 35DC32571653184500862E62 /* player-hd.png */; };
+		35DC32611653184500862E62 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = 35DC32581653184500862E62 /* player.png */; };
+		35DC32621653184500862E62 /* projectile-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 35DC32591653184500862E62 /* projectile-hd.png */; };
+		35DC32631653184500862E62 /* projectile.png in Resources */ = {isa = PBXBuildFile; fileRef = 35DC325A1653184500862E62 /* projectile.png */; };
+		35DC32641653184500862E62 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 35DC325C1653184500862E62 /* background-music-aac.caf */; };
+		35DC32651653184500862E62 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 35DC325D1653184500862E62 /* pew-pew-lei.caf */; };
+		35DC32681653249C00862E62 /* GameOverLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC32671653249C00862E62 /* GameOverLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -416,6 +425,16 @@
 		35DC324316530CA400862E62 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		35DC324516530CA400862E62 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		35DC324616530CA400862E62 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		35DC32551653184500862E62 /* monster-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monster-hd.png"; sourceTree = "<group>"; };
+		35DC32561653184500862E62 /* monster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster.png; sourceTree = "<group>"; };
+		35DC32571653184500862E62 /* player-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player-hd.png"; sourceTree = "<group>"; };
+		35DC32581653184500862E62 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		35DC32591653184500862E62 /* projectile-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "projectile-hd.png"; sourceTree = "<group>"; };
+		35DC325A1653184500862E62 /* projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = projectile.png; sourceTree = "<group>"; };
+		35DC325C1653184500862E62 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		35DC325D1653184500862E62 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		35DC32661653249C00862E62 /* GameOverLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverLayer.h; sourceTree = "<group>"; };
+		35DC32671653249C00862E62 /* GameOverLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -474,12 +493,15 @@
 		35DC30B516530C7500862E62 /* Cocos2DSimpleGame */ = {
 			isa = PBXGroup;
 			children = (
+				35DC32531653184500862E62 /* ResourcePack */,
 				35DC323F16530CA300862E62 /* AppDelegate.h */,
 				35DC324016530CA300862E62 /* AppDelegate.m */,
 				35DC324216530CA300862E62 /* HelloWorldLayer.h */,
 				35DC324316530CA400862E62 /* HelloWorldLayer.m */,
 				35DC324516530CA400862E62 /* IntroLayer.h */,
 				35DC324616530CA400862E62 /* IntroLayer.m */,
+				35DC32661653249C00862E62 /* GameOverLayer.h */,
+				35DC32671653249C00862E62 /* GameOverLayer.m */,
 				35DC30B616530C7500862E62 /* Resources */,
 				35DC30D416530C7A00862E62 /* libs */,
 				35DC323B16530CA300862E62 /* Supporting Files */,
@@ -862,6 +884,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		35DC32531653184500862E62 /* ResourcePack */ = {
+			isa = PBXGroup;
+			children = (
+				35DC32541653184500862E62 /* Art */,
+				35DC325B1653184500862E62 /* Sounds */,
+			);
+			path = ResourcePack;
+			sourceTree = "<group>";
+		};
+		35DC32541653184500862E62 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				35DC32551653184500862E62 /* monster-hd.png */,
+				35DC32561653184500862E62 /* monster.png */,
+				35DC32571653184500862E62 /* player-hd.png */,
+				35DC32581653184500862E62 /* player.png */,
+				35DC32591653184500862E62 /* projectile-hd.png */,
+				35DC325A1653184500862E62 /* projectile.png */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		35DC325B1653184500862E62 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				35DC325C1653184500862E62 /* background-music-aac.caf */,
+				35DC325D1653184500862E62 /* pew-pew-lei.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -928,6 +981,14 @@
 				35DC30D016530C7900862E62 /* Icon@2x.png in Resources */,
 				35DC30D316530C7A00862E62 /* iTunesArtwork in Resources */,
 				35DC321F16530CA000862E62 /* ChangeLog in Resources */,
+				35DC325E1653184500862E62 /* monster-hd.png in Resources */,
+				35DC325F1653184500862E62 /* monster.png in Resources */,
+				35DC32601653184500862E62 /* player-hd.png in Resources */,
+				35DC32611653184500862E62 /* player.png in Resources */,
+				35DC32621653184500862E62 /* projectile-hd.png in Resources */,
+				35DC32631653184500862E62 /* projectile.png in Resources */,
+				35DC32641653184500862E62 /* background-music-aac.caf in Resources */,
+				35DC32651653184500862E62 /* pew-pew-lei.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1046,6 +1107,7 @@
 				35DC324116530CA300862E62 /* AppDelegate.m in Sources */,
 				35DC324416530CA400862E62 /* HelloWorldLayer.m in Sources */,
 				35DC324716530CA400862E62 /* IntroLayer.m in Sources */,
+				35DC32681653249C00862E62 /* GameOverLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
